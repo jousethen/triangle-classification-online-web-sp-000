@@ -19,6 +19,7 @@ class Triangle
     if valid? == false
       raise TriangleError
       rescue TriangleError => error
+        puts error.message
     elsif @s1 == @s2 && @s1 == @s3
       return :equilateral
     elsif @s1 != @s2 && @s2 != @s3 && @s1 != @s3
@@ -29,7 +30,9 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    # triangle error code
+    def message
+      "Hey.... Thats not a triangle"
+    end
   end
   
 end
