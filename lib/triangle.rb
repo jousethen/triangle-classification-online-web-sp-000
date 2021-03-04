@@ -17,6 +17,7 @@ class Triangle
   
   def kind
     if valid? == false
+      begin
       raise TriangleError
     elsif @s1 == @s2 && @s1 == @s3
       return :equilateral
