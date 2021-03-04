@@ -19,7 +19,7 @@ class Triangle
     if valid? == false
       begin
         raise TriangleError
-        rescue TriangleError => error
+      rescue TriangleError => error
           puts error.message
       end
     elsif @s1 == @s2 && @s1 == @s3
