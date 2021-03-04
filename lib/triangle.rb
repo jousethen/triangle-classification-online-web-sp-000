@@ -18,7 +18,7 @@ class Triangle
   def kind
     if valid? == false
       begin
-        raise TriangleError.new
+        raise TriangleError
       rescue TriangleError => error
           puts error.message
       end 
