@@ -6,4 +6,13 @@ class Triangle
     @s2 = s2
     @s3 = s3
   end
+  
+  def kind
+    if @s1 == @s2 && @s1 == @s3
+      return :equilateral
+    else if
+      
+    else
+    end
+  end
 end
