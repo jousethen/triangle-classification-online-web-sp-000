@@ -19,7 +19,7 @@ class Triangle
     if valid? == false
       
         raise TriangleError
-      rescue TriangleError => error puts error.message
+      rescue TriangleError
       
     elsif @s1 == @s2 && @s1 == @s3
       return :equilateral
