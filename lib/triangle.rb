@@ -18,6 +18,7 @@ class Triangle
   def kind
     if valid? == false
       raise TriangleError
+      rescue TriangleError => error
     elsif @s1 == @s2 && @s1 == @s3
       return :equilateral
     elsif @s1 != @s2 && @s2 != @s3 && @s1 != @s3
