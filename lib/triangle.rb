@@ -10,7 +10,7 @@ class Triangle
   def kind
     if @s1 == @s2 && @s1 == @s3
       return :equilateral
-    else if @s1 != @s2 && @s2 != @s3 && @s1 != @s3
+    elsif @s1 != @s2 && @s2 != @s3 && @s1 != @s3
       return :scalene
     else
       return :isosceles
